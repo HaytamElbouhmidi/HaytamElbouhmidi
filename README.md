@@ -27,7 +27,7 @@ The status describes verified operation, not whether every planned feature is co
 | **[ROG Slash Battery Gauge](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge)** | Linux | ASUS ROG laptop | ![Working](https://img.shields.io/badge/WORKING-00843D?style=flat-square) | `Unversioned` | [Source ZIP](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge/archive/refs/heads/main.zip) |
 | **[AeroDrive](https://github.com/HaytamElbouhmidi/AeroDrive)** | Android | Phone, Android Auto | ![Testing](https://img.shields.io/badge/TESTING-C88A00?style=flat-square) | `0.2.1-dev` | [Source ZIP](https://github.com/HaytamElbouhmidi/AeroDrive/archive/refs/heads/main.zip) |
 
-**Version note:** `Unversioned` means I have not assigned a published software version or GitHub Release. It does not mean the source code is missing. AeroDrive's current Android `versionName` is `0.2.1-dev`, which is a development build, not a stable release.
+**Version note:** I show versions declared in each application's source, not version numbers on separately uploaded update packages. `Unversioned` means the application does not yet declare a version. A `-dev` suffix identifies a development build. When I change an application version, I update its existing `README.md`. This profile's version table and badges are synchronized from the current source.
 
 ### Browse by device platform
 
@@ -48,7 +48,7 @@ The status describes verified operation, not whether every planned feature is co
 ![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
 ![Version](https://img.shields.io/badge/VERSION-UNVERSIONED-929292?style=flat-square)
 
-Scan Gmail mailing lists, choose which senders to unsubscribe from, and export the results. Windows launchers are included. Automated offline tests are documented, but native Windows and live Gmail operations have not been independently verified in the repository's test report.
+Scan Gmail mailing lists, choose which senders to unsubscribe from, and export results using a lightweight Tkinter interface. Windows launchers are included. Offline tests are documented, but live Gmail and native Windows operation still require verification.
 
 **Platform:** Windows desktop  
 **Requirements:** Python 3.10 or newer, Tkinter, and a Google app password
@@ -68,7 +68,7 @@ Scan Gmail mailing lists, choose which senders to unsubscribe from, and export t
 ![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
 ![Version](https://img.shields.io/badge/VERSION-UNVERSIONED-929292?style=flat-square)
 
-The same Gmail desktop utility is available as Python source for Linux. Its interface has been captured on Linux, and the project includes offline tests. Live Gmail behavior still requires validation.
+The same lightweight Tkinter application runs from Python source on Linux. The interface has been captured on Linux and the project includes offline tests. Live Gmail behavior still requires validation.
 
 **Platform:** Linux desktop  
 **Requirements:** Python 3.10 or newer, Tkinter, and a Google app password
