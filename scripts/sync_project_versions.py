@@ -12,7 +12,7 @@ import urllib.request
 from pathlib import Path
 from urllib.parse import quote
 
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 OWNER = "HaytamElbouhmidi"
 PROJECTS = {
     "Gmail Unsubscriber": ("gmail-unsubscriber", "gmail_unsubscriber.py", "python"),
@@ -51,14 +51,14 @@ def badge(value: str, *, development: bool = False) -> str:
 def replace_version_labels(source: str, versions: dict[str, str]) -> str:
     lines = source.splitlines(keepends=True)
     in_section = ""
-    table_updates = {name: 0 for name in PROJECTS}
-    badge_updates = {name: 0 for name in PROJECTS}
+    table_updates = {name: 0 for name in versions}
+    badge_updates = {name: 0 for name in versions}
     for index, line in enumerate(lines):
         if line.startswith("## "):
             in_section = line.strip()[3:]
         if line.startswith("| **[") and "[Source ZIP]" in line:
             cells = line.split("|")
-            for name in PROJECTS:
+            for name in versions:
                 if f"**[{name}](" in cells[1]:
                     if len(cells) < 8:
                         raise ValueError(f"Invalid project overview row for {name}")
@@ -72,12 +72,12 @@ def replace_version_labels(source: str, versions: dict[str, str]) -> str:
             if heading in PROJECTS:
                 in_section = heading
         if line.startswith("![Version]") or line.startswith("![Development version]"):
-            if in_section in PROJECTS:
+            if in_section in versions:
                 end = "\n" if line.endswith("\n") else ""
                 lines[index] = badge(versions[in_section], development=(in_section == "AeroDrive")) + end
                 badge_updates[in_section] += 1
 
-    for name in PROJECTS:
+    for name in versions:
         required_badges = 2 if name == "Gmail Unsubscriber" else 1
         if table_updates[name] != 1 or badge_updates[name] != required_badges:
             raise ValueError(f"Could not locate exact version labels for {name}: "
@@ -89,9 +89,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Synchronize my GitHub profile project versions")
     parser.add_argument("--readme", type=Path, default=Path(__file__).resolve().parents[1] / "README.md")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--gmail-version", help="Use a verified local Gmail Unsubscriber version")
     args = parser.parse_args()
-    versions = {name: declared_version(read_remote(repo, path), kind)
-                for name, (repo, path, kind) in PROJECTS.items()}
+    versions = ({"Gmail Unsubscriber": args.gmail_version} if args.gmail_version else
+                {name: declared_version(read_remote(repo, path), kind)
+                 for name, (repo, path, kind) in PROJECTS.items()})
+    for value in versions.values():
+        if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._+-]{0,39}", value):
+            raise ValueError(f"Invalid application version: {value!r}")
     original = args.readme.read_text(encoding="utf-8")
     updated = replace_version_labels(original, versions)
     print("Source versions: " + ", ".join(f"{name}={version}" for name, version in versions.items()))

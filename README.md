@@ -23,7 +23,7 @@ The status describes verified operation, not whether every planned feature is co
 
 | Project | Operating system | Platform | Status | Version | Get it |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **[Gmail Unsubscriber](https://github.com/HaytamElbouhmidi/gmail-unsubscriber)** | Windows, Linux | Desktop | ![Testing](https://img.shields.io/badge/TESTING-C88A00?style=flat-square) | `Unversioned` | [Source ZIP](https://github.com/HaytamElbouhmidi/gmail-unsubscriber/archive/refs/heads/main.zip) |
+| **[Gmail Unsubscriber](https://github.com/HaytamElbouhmidi/gmail-unsubscriber)** | Windows, Linux | Desktop | ![Testing](https://img.shields.io/badge/TESTING-C88A00?style=flat-square) | `3.1.0` | [Source ZIP](https://github.com/HaytamElbouhmidi/gmail-unsubscriber/archive/refs/heads/main.zip) |
 | **[ROG Slash Battery Gauge](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge)** | Linux | ASUS ROG laptop | ![Working](https://img.shields.io/badge/WORKING-00843D?style=flat-square) | `Unversioned` | [Source ZIP](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge/archive/refs/heads/main.zip) |
 | **[AeroDrive](https://github.com/HaytamElbouhmidi/AeroDrive)** | Android | Phone, Android Auto | ![Testing](https://img.shields.io/badge/TESTING-C88A00?style=flat-square) | `0.2.1-dev` | [Source ZIP](https://github.com/HaytamElbouhmidi/AeroDrive/archive/refs/heads/main.zip) |
 
@@ -46,9 +46,9 @@ The status describes verified operation, not whether every planned feature is co
 ### Gmail Unsubscriber
 
 ![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
-![Version](https://img.shields.io/badge/VERSION-UNVERSIONED-929292?style=flat-square)
+![Version](https://img.shields.io/badge/VERSION-3.1.0-123447?style=flat-square)
 
-Scan Gmail mailing lists, choose which senders to unsubscribe from, and export results using a lightweight Tkinter interface. Windows launchers are included. Offline tests are documented, but live Gmail and native Windows operation still require verification.
+Scan INBOX and optionally Spam for mailing lists using my lightweight Tkinter desktop application. Supported unsubscribe methods, optional sender-directed request emails, resumable scans, and sortable success/failure outcomes are included. Windows launchers and offline tests are provided. Live Gmail acceptance and native Windows operation still require verification.
 
 **Platform:** Windows desktop  
 **Requirements:** Python 3.10 or newer, Tkinter, and a Google app password
@@ -66,9 +66,9 @@ Scan Gmail mailing lists, choose which senders to unsubscribe from, and export r
 ### Gmail Unsubscriber for Linux
 
 ![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
-![Version](https://img.shields.io/badge/VERSION-UNVERSIONED-929292?style=flat-square)
+![Version](https://img.shields.io/badge/VERSION-3.1.0-123447?style=flat-square)
 
-The same lightweight Tkinter application runs from Python source on Linux. The interface has been captured on Linux and the project includes offline tests. Live Gmail behavior still requires validation.
+The same lightweight Python application runs on Linux, with optional Spam scanning, durable resume checkpoints, and sortable unsubscribe outcomes. Offline tests are included. Live Gmail behavior still requires validation.
 
 **Platform:** Linux desktop  
 **Requirements:** Python 3.10 or newer, Tkinter, and a Google app password
