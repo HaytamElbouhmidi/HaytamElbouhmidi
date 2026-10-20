@@ -6,8 +6,9 @@ I build software tools, instrumentation, and hardware integrations. This README 
 
 ## Find software by operating system
 
-[![Windows](https://img.shields.io/badge/WINDOWS-1%20PROJECT-123447?style=for-the-badge&logo=windows11&logoColor=white)](#windows)
-[![Linux](https://img.shields.io/badge/LINUX-2%20PROJECTS-00843D?style=for-the-badge&logo=linux&logoColor=white)](#linux)
+[![Windows](https://img.shields.io/badge/WINDOWS-2%20PROJECTS-123447?style=for-the-badge&logo=windows11&logoColor=white)](#windows)
+[![Linux](https://img.shields.io/badge/LINUX-3%20PROJECTS-00843D?style=for-the-badge&logo=linux&logoColor=white)](#linux)
+[![macOS](https://img.shields.io/badge/MACOS-1%20PROJECT-929292?style=for-the-badge&logo=apple&logoColor=white)](#macos)
 [![Android](https://img.shields.io/badge/ANDROID-1%20PROJECT-167C80?style=for-the-badge&logo=android&logoColor=white)](#android)
 
 ### Project status key
@@ -24,6 +25,7 @@ The status describes verified operation, not whether every planned feature is co
 | Project | Operating system | Platform | Status | Version | Get it |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **[Gmail Unsubscriber](https://github.com/HaytamElbouhmidi/gmail-unsubscriber)** | Windows, Linux | Desktop | ![Testing](https://img.shields.io/badge/TESTING-C88A00?style=flat-square) | `3.1.3` | [Source ZIP](https://github.com/HaytamElbouhmidi/gmail-unsubscriber/archive/refs/heads/main.zip) |
+| **[Flat File Collector](https://github.com/HaytamElbouhmidi/flat-file-collector)** | Windows, Linux, macOS | Desktop, command line | ![Testing](https://img.shields.io/badge/TESTING-C88A00?style=flat-square) | `1.0.0` | [Source ZIP](https://github.com/HaytamElbouhmidi/flat-file-collector/archive/refs/heads/main.zip) |
 | **[ROG Slash Battery Gauge](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge)** | Linux | ASUS ROG laptop | ![Working](https://img.shields.io/badge/WORKING-00843D?style=flat-square) | `Unversioned` | [Source ZIP](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge/archive/refs/heads/main.zip) |
 | **[AeroDrive](https://github.com/HaytamElbouhmidi/AeroDrive)** | Android | Phone, Android Auto | ![Testing](https://img.shields.io/badge/TESTING-C88A00?style=flat-square) | `0.2.1-dev` | [Source ZIP](https://github.com/HaytamElbouhmidi/AeroDrive/archive/refs/heads/main.zip) |
 
@@ -33,7 +35,8 @@ The status describes verified operation, not whether every planned feature is co
 
 | Platform | Projects |
 | :--- | :--- |
-| **Desktop software** | [Gmail Unsubscriber](#gmail-unsubscriber) |
+| **Desktop software** | [Gmail Unsubscriber](#gmail-unsubscriber), [Flat File Collector](#flat-file-collector) |
+| **Cross-platform file utilities** | [Flat File Collector](#flat-file-collector) |
 | **ASUS ROG laptop lighting** | [ROG Slash Battery Gauge](#rog-slash-battery-gauge) |
 | **Android phone / Android Auto** | [AeroDrive](#aerodrive) |
 
@@ -56,6 +59,21 @@ Scan INBOX and optionally Spam for mailing lists using my lightweight Tkinter de
 [![Download source](https://img.shields.io/badge/DOWNLOAD-SOURCE%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/gmail-unsubscriber/archive/refs/heads/main.zip)
 [![Installation instructions](https://img.shields.io/badge/INSTRUCTIONS-SETUP-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/gmail-unsubscriber#setup)
 [![Repository](https://img.shields.io/badge/REPOSITORY-VIEW%20CODE-123447?style=flat-square)](https://github.com/HaytamElbouhmidi/gmail-unsubscriber)
+
+### Flat File Collector
+
+![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
+![Version](https://img.shields.io/badge/VERSION-1.0.0-123447?style=flat-square)
+
+I use this utility to consolidate files from folders, subfolders, and nested ZIP archives into one directory. It renames duplicate filenames, supports preview mode, and leaves original files untouched.
+
+**Platform:** Windows desktop and command line  
+**Requirements:** Python 3.10 or newer. Tkinter is required only for folder-selection dialogs  
+**Validation:** Automated tests passed on Linux. Native Windows testing is pending
+
+[![Download source](https://img.shields.io/badge/DOWNLOAD-SOURCE%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/flat-file-collector/archive/refs/heads/main.zip)
+[![Installation instructions](https://img.shields.io/badge/INSTRUCTIONS-USAGE-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/flat-file-collector#run)
+[![Repository](https://img.shields.io/badge/REPOSITORY-VIEW%20CODE-123447?style=flat-square)](https://github.com/HaytamElbouhmidi/flat-file-collector)
 
 ---
 
@@ -92,6 +110,42 @@ I use the seven white Slash Lighting segments on the back of my ASUS ROG Zephyru
 [![Repository](https://img.shields.io/badge/REPOSITORY-VIEW%20CODE-123447?style=flat-square)](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge)
 
 **Compatibility:** Working status applies to the tested seven-segment controller. Other ROG models and controller IDs are not automatically supported.
+
+### Flat File Collector for Linux
+
+![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
+![Version](https://img.shields.io/badge/VERSION-1.0.0-123447?style=flat-square)
+
+The Python utility recursively collects files, opens nested ZIP archives, and places the results into a flat output directory. I added filename collision protection, extraction limits, and a dry-run preview.
+
+**Platform:** Linux desktop and command line, including CachyOS  
+**Requirements:** Python 3.10 or newer. Tkinter is optional. Install `tk` for GUI folder selection on CachyOS or Arch  
+**Validation:** Ten automated tests passed on Linux. Additional environment testing is pending
+
+[![Download source](https://img.shields.io/badge/DOWNLOAD-SOURCE%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/flat-file-collector/archive/refs/heads/main.zip)
+[![Installation instructions](https://img.shields.io/badge/INSTRUCTIONS-USAGE-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/flat-file-collector#run)
+[![Repository](https://img.shields.io/badge/REPOSITORY-VIEW%20CODE-123447?style=flat-square)](https://github.com/HaytamElbouhmidi/flat-file-collector)
+
+---
+
+## macOS
+
+[![macOS tools](https://img.shields.io/badge/MACOS-PYTHON%20UTILITIES-929292?style=for-the-badge&logo=apple&logoColor=white)](#macos)
+
+### Flat File Collector for macOS
+
+![Unverified](https://img.shields.io/badge/STATUS-UNVERIFIED-929292?style=flat-square)
+![Version](https://img.shields.io/badge/VERSION-1.0.0-123447?style=flat-square)
+
+The same Python command-line utility is intended to work on macOS. It consolidates files from subfolders and ZIP archives, including nested ZIPs. Native folder selection is optional.
+
+**Platform:** macOS command line  
+**Requirements:** Python 3.10 or newer. Tkinter is required only for GUI folder selection  
+**Validation:** macOS runtime operation has not been verified
+
+[![Download source](https://img.shields.io/badge/DOWNLOAD-SOURCE%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/flat-file-collector/archive/refs/heads/main.zip)
+[![Installation instructions](https://img.shields.io/badge/INSTRUCTIONS-USAGE-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/flat-file-collector#run)
+[![Repository](https://img.shields.io/badge/REPOSITORY-VIEW%20CODE-123447?style=flat-square)](https://github.com/HaytamElbouhmidi/flat-file-collector)
 
 ---
 
