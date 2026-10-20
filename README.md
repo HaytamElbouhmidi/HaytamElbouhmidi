@@ -116,27 +116,14 @@ I update each project's source version, README, and this directory together when
 
 ## Version numbering
 
-I use [Semantic Versioning](https://semver.org/) for my software projects. Each repository has its own independent version sequence in the form `MAJOR.MINOR.PATCH`, with an optional prerelease suffix such as `-dev`.
-
 | Change | Version increment | Example |
 | :--- | :--- | :--- |
 | Breaking change to an established public interface, configuration, or behavior | **MAJOR** | `3.1.3` → `4.0.0` |
 | New backward-compatible feature or meaningful capability | **MINOR** | `3.1.3` → `3.2.0` |
 | Backward-compatible bug fix, security fix, or reliability improvement | **PATCH** | `3.1.3` → `3.1.4` |
-| Documentation, comments, metadata, or CI-only maintenance with no application change | **No application version change** | `3.1.3` stays `3.1.3` |
-
-### Development and release labels
-
-- **`0.x.y`** identifies software still in initial development. Before `1.0.0`, I may use the minor increment for an incompatible design change because the public interface has not yet stabilized.
-- **`-dev`** identifies ongoing development, such as `0.2.1-dev`. I may use `-alpha.N`, `-beta.N`, and `-rc.N` for numbered prerelease milestones. These are not stable release tags.
-- **`1.0.0`** marks the first established release baseline. It does not, by itself, mean that every device, operating system, or planned feature has been validated.
-- **`Unversioned`** means the repository has not yet declared an application version. I do not assign a release number solely to make the profile table look complete.
-
-### How I apply a version change
-
-I increase the appropriate component when a software change is ready to be delivered, not for every commit or based on elapsed time. When I change an application version, I update the version declared in its source and its project README, then keep this profile's table and badges consistent. I use a `vMAJOR.MINOR.PATCH` Git tag when publishing a release.
-
-**Version and validation status are separate.** The WORKING, TESTING, NOT WORKING, and UNVERIFIED labels describe test evidence. A higher version does not guarantee that a project is fully tested, and a development build may still work on specific verified hardware. Previously assigned versions remain as published. These rules apply to subsequent version changes.
+| Documentation, comments, metadata, or CI-only maintenance with no application change | **No version change** | `3.1.3` stays `3.1.3` |
+| Active development or prerelease build | **DEV** | `0.2.1-dev` |
+| Application has no declared version | **Unversioned** | `Unversioned` |
 
 ---
 
