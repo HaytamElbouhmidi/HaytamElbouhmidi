@@ -1,7 +1,14 @@
-# Version 1.0.0
+# Version 1.1.0
 name: Sync profile project versions
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - scripts/sync_project_versions.py
+      - scripts/test_sync_project_versions.py
+      - .github/workflows/sync-project-versions.yml
   schedule:
     - cron: '7 */6 * * *'
   workflow_dispatch:
@@ -17,6 +24,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
+      - name: Validate version synchronization
+        run: python -m unittest discover -s scripts -p 'test_sync_project_versions.py' -v
       - name: Update version badges and overview
         run: python scripts/sync_project_versions.py
       - name: Commit if changed
