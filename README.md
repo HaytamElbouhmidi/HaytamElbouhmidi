@@ -86,7 +86,7 @@ Turns the seven-segment Slash Lighting bar on a compatible ASUS ROG laptop into 
 ![Android](https://img.shields.io/badge/ANDROID-167C80?style=flat-square&logo=android&logoColor=white)
 ![Android Auto](https://img.shields.io/badge/ANDROID%20AUTO-167C80?style=flat-square)
 ![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
-![Version](https://img.shields.io/badge/VERSION-0.2.1--dev-123447?style=flat-square)
+![Development version](https://img.shields.io/badge/VERSION-0.2.1--dev-123447?style=flat-square)
 ![CI](https://github.com/HaytamElbouhmidi/AeroDrive/actions/workflows/ci.yml/badge.svg?branch=main)
 
 An open-source Android and Android Auto driving-map prototype that uses MapLibre to display a map and simulated nearby aircraft. It includes an optional development bridge for OpenSky aircraft data. Routing, authorized live-data use, and ATC audio remain in development.
