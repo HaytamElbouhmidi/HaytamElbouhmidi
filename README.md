@@ -79,7 +79,7 @@ Turns the seven-segment Slash Lighting bar on a compatible ASUS ROG laptop into 
 
 ---
 
-### SmartTar
+### [SmartTar](https://github.com/HaytamElbouhmidi/smarttar)
 
 ![Linux](https://img.shields.io/badge/LINUX-00843D?style=flat-square&logo=linux&logoColor=white)
 ![KDE Plasma](https://img.shields.io/badge/KDE%20PLASMA%20%2F%20DEsk-123447?style=flat-square)
@@ -90,8 +90,10 @@ A lightweight archive inspector and user-level installer for supported Linux app
 
 **Operating system:** Linux, targeting CachyOS with KDE Plasma and DEsk  
 **Requirements:** Python 3.10+, KDialog, and xdg-utils  
-**Validation:** Automated Linux archive and integration tests are included. Native CachyOS/KDE/DEsk and the downloaded Android Studio bundle still need laptop verification.  
-**Repository:** Publication pending. The v0.2.0 laptop test build is in testing.
+**Validation:** All 119 local Linux tests passed, including inspection and extraction of a valid archive larger than 1 GiB. Native CachyOS/KDE/DEsk and the downloaded Android Studio bundle still need laptop verification.  
+
+[![Download source](https://img.shields.io/badge/DOWNLOAD-SOURCE%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/smarttar/archive/refs/heads/main.zip)
+[![Installation](https://img.shields.io/badge/INSTRUCTIONS-INSTALLATION-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/smarttar#installation)
 
 ---
 
