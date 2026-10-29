@@ -6,7 +6,7 @@ I build software tools, instrumentation, and hardware integrations. This is my p
 
 ## Browse projects
 
-[![PC](https://img.shields.io/badge/PC-3%20PROJECTS-123447?style=for-the-badge)](#pc)
+[![PC](https://img.shields.io/badge/PC-4%20PROJECTS-123447?style=for-the-badge)](#pc)
 [![Mobile](https://img.shields.io/badge/MOBILE-1%20PROJECT-00843D?style=for-the-badge)](#mobile)
 
 ### Status key
@@ -76,6 +76,22 @@ Turns the seven-segment Slash Lighting bar on a compatible ASUS ROG laptop into 
 
 [![Download source](https://img.shields.io/badge/DOWNLOAD-SOURCE%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge/archive/refs/heads/main.zip)
 [![Installation](https://img.shields.io/badge/INSTRUCTIONS-INSTALLATION-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge#installation)
+
+---
+
+### SmartTar
+
+![Linux](https://img.shields.io/badge/LINUX-00843D?style=flat-square&logo=linux&logoColor=white)
+![KDE Plasma](https://img.shields.io/badge/KDE%20PLASMA%20%2F%20DEsk-123447?style=flat-square)
+![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
+![Version](https://img.shields.io/badge/VERSION-0.2.0-123447?style=flat-square)
+
+A lightweight archive inspector and user-level installer for supported Linux applications distributed as `.tar.gz` or `.tgz` files. It uses native KDE dialogs, recognizes Android Studio bundles, and creates application launchers after confirmation. There is no background service or bundled runtime.
+
+**Operating system:** Linux, targeting CachyOS with KDE Plasma and DEsk  
+**Requirements:** Python 3.10+, KDialog, and xdg-utils  
+**Validation:** Automated Linux archive and integration tests are included. Native CachyOS/KDE/DEsk and the downloaded Android Studio bundle still need laptop verification.  
+**Repository:** Publication pending. The v0.2.0 laptop test build is in testing.
 
 ---
 
