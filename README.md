@@ -86,11 +86,11 @@ Turns the seven-segment Slash Lighting bar on a compatible ASUS ROG laptop into 
 ![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
 ![Version](https://img.shields.io/badge/VERSION-0.2.0-123447?style=flat-square)
 
-A lightweight archive inspector and user-level installer for supported Linux applications distributed as `.tar.gz` or `.tgz` files. It uses native KDE dialogs, recognizes Android Studio bundles, and creates application launchers after confirmation. There is no background service or bundled runtime.
+A lightweight smart installer and archive handler for `.tar.gz` and `.tgz` files. It uses native KDE dialogs to inspect contents, install supported Linux applications, or extract files with installation guidance. There is no background service or bundled runtime.
 
 **Operating system:** Linux, targeting CachyOS with KDE Plasma and DEsk  
 **Requirements:** Python 3.10+, KDialog, and xdg-utils  
-**Validation:** All 119 local Linux tests passed, including inspection and extraction of a valid archive larger than 1 GiB. Native CachyOS/KDE/DEsk and the downloaded Android Studio bundle still need laptop verification.  
+**Validation:** All 119 local Linux tests passed, including inspection and extraction of a valid archive larger than 1 GiB. Native CachyOS/KDE/DEsk testing with real application archives is still pending.  
 
 [![Download source](https://img.shields.io/badge/DOWNLOAD-SOURCE%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/smarttar/archive/refs/heads/main.zip)
 [![Installation](https://img.shields.io/badge/INSTRUCTIONS-INSTALLATION-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/smarttar#installation)
