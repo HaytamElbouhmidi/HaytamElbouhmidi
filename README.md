@@ -86,7 +86,7 @@ Turns the seven-segment Slash Lighting bar on a compatible ASUS ROG laptop into 
 ![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
 ![Version](https://img.shields.io/badge/VERSION-0.2.0-123447?style=flat-square)
 
-A lightweight smart installer and archive handler for `.tar.gz` and `.tgz` files. It uses native KDE dialogs to inspect contents, install supported Linux applications, or extract files with installation guidance. There is no background service or bundled runtime.
+Makes downloaded Linux apps easier to install. After the one-time setup, double-click a `.tar.gz` or `.tgz` download, choose an available install option, and confirm. Installed apps appear in the application menu. Other downloads can be unpacked into a new folder. No background service or terminal commands are needed for ordinary use with supported app downloads.
 
 **Operating system:** Linux, targeting CachyOS with KDE Plasma and DEsk  
 **Requirements:** Python 3.10+, KDialog, and xdg-utils  
