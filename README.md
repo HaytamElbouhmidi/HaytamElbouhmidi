@@ -2,12 +2,18 @@
 
 **Mechanical Engineer | Systems Integration | Software and Hardware Development**
 
-I build software tools, instrumentation, and hardware integrations. This is my project directory. Each repository appears once, grouped by device type, with a description, operating-system compatibility, current version, validation status, and setup or download links.
+I build practical tools that make everyday computer tasks easier, especially for people who are not comfortable with technical setup or terminal commands.
+
+My goal is to make useful things easier to do, not give you another system to learn. Browse the projects below to find what you need. Each one explains what it does, which devices it works with, and how much setup is involved.
+
+Some tools already have familiar windows and buttons. Others still need terminal commands or specific hardware. I explain those requirements so you can decide whether a tool is right for you before downloading it.
 
 ## Browse projects
 
 [![PC](https://img.shields.io/badge/PC-4%20PROJECTS-123447?style=for-the-badge)](#pc)
 [![Mobile](https://img.shields.io/badge/MOBILE-1%20PROJECT-00843D?style=for-the-badge)](#mobile)
+
+**New to GitHub?** Start with a project's **Getting started** link. This opens its instructions. **Project files** downloads a ZIP folder containing the program's files, which is not always a ready-to-run installer. Download and extract that ZIP only after checking the instructions for your device.
 
 ### Status key
 
@@ -16,13 +22,13 @@ I build software tools, instrumentation, and hardware integrations. This is my p
 ![Not working](https://img.shields.io/badge/NOT%20WORKING-Confirmed%20issue-B42318?style=flat-square)
 ![Unverified](https://img.shields.io/badge/UNVERIFIED-No%20test%20evidence-929292?style=flat-square)
 
-Status describes test evidence rather than feature completeness. An OS badge indicates an intended platform, not a guarantee that every configuration has been tested.
+**Working** means the tool has been tested on the listed setup. **Testing** means it is still being checked and you may run into problems. **Not working** means a known issue prevents it from working as expected. **Unverified** means there is not enough testing to say yet. A Windows, Linux, or Android badge does not mean every device has been tested.
 
 ---
 
 ## PC
 
-Desktop utilities and laptop hardware integrations. Multi-OS projects are listed only once.
+Tools for desktop and laptop computers. Each project is listed once, even if it works on more than one operating system.
 
 ### [Gmail Unsubscriber](https://github.com/HaytamElbouhmidi/gmail-unsubscriber)
 
@@ -31,14 +37,14 @@ Desktop utilities and laptop hardware integrations. Multi-OS projects are listed
 ![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
 ![Version](https://img.shields.io/badge/VERSION-3.1.3-123447?style=flat-square)
 
-A lightweight desktop tool for finding mailing-list messages in Gmail and managing unsubscribe requests. It supports optional Inbox and Spam scans, automatic or manual unsubscribe actions, resumable scans, and searchable results.
+A desktop tool to help you find newsletters and other mailing-list emails in Gmail and send unsubscribe requests. Choose how much mail to check, include Spam if you want, search the results, and continue an unfinished scan later.
 
-**Operating systems:** Windows and Linux desktop  
-**Requirements:** Python 3.10+, Tkinter, and a Google app password  
-**Validation:** Offline tests are available. Live Gmail acceptance and native Windows operation still need verification.
+**Works with:** Windows and Linux desktop computers  
+**Before you start:** You need a Gmail account and a Google app password, a separate sign-in code for this tool. The setup guide covers the required software.  
+**Current status:** Still being tested. An unsubscribe request is not a guarantee that a sender will stop emailing you. Live Gmail use and Windows operation still need verification.
 
-[![Download source](https://img.shields.io/badge/DOWNLOAD-SOURCE%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/gmail-unsubscriber/archive/refs/heads/main.zip)
-[![Setup](https://img.shields.io/badge/INSTRUCTIONS-SETUP-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/gmail-unsubscriber#setup)
+[![Project files](https://img.shields.io/badge/DOWNLOAD-PROJECT%20FILES%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/gmail-unsubscriber/archive/refs/heads/main.zip)
+[![Getting started](https://img.shields.io/badge/GETTING%20STARTED-SETUP-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/gmail-unsubscriber#setup)
 
 ---
 
@@ -50,14 +56,14 @@ A lightweight desktop tool for finding mailing-list messages in Gmail and managi
 ![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
 ![Version](https://img.shields.io/badge/VERSION-1.0.0-123447?style=flat-square)
 
-A Python utility that collects files from a selected folder, all subfolders, and nested ZIP archives into one directory. It handles duplicate filenames, includes a dry-run preview, and leaves the originals untouched.
+Bring scattered files together in one folder without moving or deleting the originals. Pick a starting folder, and the tool copies files from that folder, the folders inside it, and ZIP files into one destination. If two files have the same name, it gives the copies different names. You can preview what will happen before copying anything.
 
-**Operating systems:** Windows, Linux (including CachyOS), and macOS  
-**Requirements:** Python 3.10+. Tkinter is optional for graphical folder selection  
-**Validation:** Automated tests passed on Linux. Native Windows testing remains pending. macOS compatibility is intended but unverified.
+**Made for:** Windows, Linux, and macOS  
+**Before you start:** It needs Python and is currently started with a terminal command. Folder-selection windows are available when the optional component is installed, but this is not yet a complete point-and-click app.  
+**Current status:** Automated checks passed on Linux. Windows and macOS still need testing on those systems.
 
-[![Download source](https://img.shields.io/badge/DOWNLOAD-SOURCE%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/flat-file-collector/archive/refs/heads/main.zip)
-[![Usage](https://img.shields.io/badge/INSTRUCTIONS-USAGE-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/flat-file-collector#run)
+[![Project files](https://img.shields.io/badge/DOWNLOAD-PROJECT%20FILES%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/flat-file-collector/archive/refs/heads/main.zip)
+[![Getting started](https://img.shields.io/badge/GETTING%20STARTED-USAGE-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/flat-file-collector#run)
 
 ---
 
@@ -67,15 +73,14 @@ A Python utility that collects files from a selected folder, all subfolders, and
 ![Working](https://img.shields.io/badge/STATUS-WORKING%20ON%20TESTED%20HARDWARE-00843D?style=flat-square)
 ![Version](https://img.shields.io/badge/VERSION-UNVERSIONED-929292?style=flat-square)
 
-Turns the seven-segment Slash Lighting bar on a compatible ASUS ROG laptop into a battery gauge. Segments fill from bottom to top, brightness tracks battery charge, and a systemd service maintains the display.
+See how much battery charge is left by looking at the light bar on your laptop lid. More of the bar lights up as the battery level rises, filling from bottom to top. The light also becomes dimmer as the battery runs down.
 
-**Operating system:** Linux, tested on CachyOS  
-**Verified hardware:** ASUS ROG Zephyrus G16 GU605MY, USB HID `0b05:193b`  
-**Requirements:** Python 3.10+, Linux `hidraw`, and systemd for background operation  
-**Validation:** Working on the tested seven-segment controller. Other ROG hardware is not automatically supported.
+**Works with:** Linux, tested on CachyOS  
+**Check your laptop first:** Verified on the ASUS ROG Zephyrus G16 GU605MY with the seven-segment light controller. Other ASUS or ROG models are not automatically supported.  
+**Before you start:** Setup uses terminal commands and administrator access. A small background service keeps the lights updated after you enable it. The guide explains how to check your hardware before installing.
 
-[![Download source](https://img.shields.io/badge/DOWNLOAD-SOURCE%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge/archive/refs/heads/main.zip)
-[![Installation](https://img.shields.io/badge/INSTRUCTIONS-INSTALLATION-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge#installation)
+[![Project files](https://img.shields.io/badge/DOWNLOAD-PROJECT%20FILES%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge/archive/refs/heads/main.zip)
+[![Getting started](https://img.shields.io/badge/GETTING%20STARTED-INSTALLATION-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/rog-slash-battery-gauge#installation)
 
 ---
 
@@ -86,14 +91,14 @@ Turns the seven-segment Slash Lighting bar on a compatible ASUS ROG laptop into 
 ![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
 ![Version](https://img.shields.io/badge/VERSION-0.2.0-123447?style=flat-square)
 
-Makes downloaded Linux apps easier to install. After the one-time setup, double-click a `.tar.gz` or `.tgz` download, choose an available install option, and confirm. Installed apps appear in the application menu. Other downloads can be unpacked into a new folder. No background service or terminal commands are needed for ordinary use with supported app downloads.
+Make downloaded Linux apps easier to install. After the one-time setup, open a `.tar.gz` or `.tgz` download, choose an available install option, and confirm. The app is then added to your normal application menu. Downloads that are not ready-to-run apps can be unpacked into a new folder instead.
 
-**Operating system:** Linux, targeting CachyOS with KDE Plasma and DEsk  
-**Requirements:** Python 3.10+, KDialog, and xdg-utils  
-**Validation:** All 119 local Linux tests passed, including inspection and extraction of a valid archive larger than 1 GiB. Native CachyOS/KDE/DEsk testing with real application archives is still pending.  
+**Made for:** CachyOS and Arch Linux with KDE Plasma or DEsk  
+**Before you start:** Installing SmartTar itself takes two terminal commands. After that, ordinary use with supported app downloads is point-and-click. It does not run in the background.  
+**Current status:** Automated Linux checks passed. More testing on real CachyOS, KDE Plasma, and DEsk setups is needed. Not every compressed download contains an app that can be installed.
 
-[![Download source](https://img.shields.io/badge/DOWNLOAD-SOURCE%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/smarttar/archive/refs/heads/main.zip)
-[![Installation](https://img.shields.io/badge/INSTRUCTIONS-INSTALLATION-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/smarttar#installation)
+[![Project files](https://img.shields.io/badge/DOWNLOAD-PROJECT%20FILES%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/smarttar/archive/refs/heads/main.zip)
+[![Getting started](https://img.shields.io/badge/GETTING%20STARTED-INSTALLATION-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/smarttar#installation)
 
 ---
 
@@ -107,39 +112,37 @@ Makes downloaded Linux apps easier to install. After the one-time setup, double-
 ![Development version](https://img.shields.io/badge/VERSION-0.2.1--dev-123447?style=flat-square)
 ![CI](https://github.com/HaytamElbouhmidi/AeroDrive/actions/workflows/ci.yml/badge.svg?branch=main)
 
-An open-source Android and Android Auto driving-map prototype that uses MapLibre to display a map and simulated nearby aircraft. It includes an optional development bridge for OpenSky aircraft data. Routing, authorized live-data use, and ATC audio remain in development.
+An early Android map project with a goal of showing nearby aircraft while you travel. The current demo displays a map and sample aircraft so the idea can be tried out. It is not yet a finished navigation app, and the sample aircraft are not live flights.
 
-**Operating systems:** Android phone and Android Auto  
-**Requirements:** See the repository's Android build and test instructions  
-**Validation:** The [October 16, 2026 CI build](https://github.com/HaytamElbouhmidi/AeroDrive/actions/runs/38916734207) passed. Physical phone and Android Auto head-unit testing remains pending. No stable release has been published.
+**Made for:** Android phones and Android Auto, which displays compatible phone apps on a car screen  
+**Before you start:** This is a development project, not a normal app-store download. The guide explains how to get or build an Android test installation file, called an APK.  
+**Current status:** An automated build completed successfully, but phone and car-screen testing still needs verification. Turn-by-turn directions, routine live aircraft data, and air-traffic-control audio are not finished. No stable release has been published.
 
-[![Download source](https://img.shields.io/badge/DOWNLOAD-SOURCE%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/AeroDrive/archive/refs/heads/main.zip)
-[![Build guide](https://img.shields.io/badge/INSTRUCTIONS-BUILD%20AND%20TEST-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/AeroDrive/blob/main/docs/first-build.md)
-[![CI artifact](https://img.shields.io/badge/DEBUG%20APK-CI%20ARTIFACT-C88A00?style=flat-square)](https://github.com/HaytamElbouhmidi/AeroDrive/actions/runs/38916734207)
+[![Project files](https://img.shields.io/badge/DOWNLOAD-PROJECT%20FILES%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/AeroDrive/archive/refs/heads/main.zip)
+[![Getting started](https://img.shields.io/badge/GETTING%20STARTED-TEST%20APP-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/AeroDrive/blob/main/docs/first-build.md)
+[![Test app download](https://img.shields.io/badge/TEST%20APP-APK%20DOWNLOAD-C88A00?style=flat-square)](https://github.com/HaytamElbouhmidi/AeroDrive/actions/runs/38916734207)
 
-The debug APK is a test artifact, not a public app release. GitHub Actions artifacts may require sign-in and can expire.
+The test app download is produced by GitHub's automated build, not a finished public release. You may need to sign in to GitHub, and older test downloads can expire. If the download is unavailable, follow the build guide.
 
 ---
 
 ## Download and version information
 
-- **Source ZIP:** A snapshot of the current `main` branch, not a compiled installer.
-- **Working:** Verified in the stated environment or on the stated hardware.
-- **Testing:** Implementation exists, but important runtime or release validation remains.
-- **Not working:** Reserved for a confirmed functional failure.
-- **Unverified:** Insufficient evidence to make a working or broken claim.
-- **Version:** A declared application version where available. `Unversioned` indicates no version has been assigned or published.
+- **Project files / Source ZIP:** A ZIP folder containing the current project files. It may need setup before it can run.
+- **Version:** The program's release number. Check this when following instructions or reporting a problem.
+- **Development / DEV:** An unfinished test version that may change or have problems.
+- **Unversioned:** The project does not yet declare a release number.
 
-I update each project's source version, README, and this directory together when I release changes. Status labels reflect testing evidence. The AeroDrive CI badge updates automatically as its build workflow runs.
+The project instructions explain the available download and setup options. The status labels describe what has actually been tested. The AeroDrive build badge updates automatically when GitHub checks whether the app can be built.
 
 ## Version numbering
 
 | Change | Version increment | Example |
 | :--- | :--- | :--- |
-| Breaking change to an established public interface, configuration, or behavior | **MAJOR** | `3.1.3` → `4.0.0` |
-| New backward-compatible feature or meaningful capability | **MINOR** | `3.1.3` → `3.2.0` |
-| Backward-compatible bug fix, security fix, or reliability improvement | **PATCH** | `3.1.3` → `3.1.4` |
-| Documentation, comments, metadata, or CI-only maintenance with no application change | **No version change** | `3.1.3` stays `3.1.3` |
+| A change that makes an existing setup or way of using the tool incompatible | **MAJOR** | `3.1.3` → `4.0.0` |
+| A new feature that keeps existing ways of using the tool working | **MINOR** | `3.1.3` → `3.2.0` |
+| A bug fix, security fix, or reliability improvement that keeps existing use working | **PATCH** | `3.1.3` → `3.1.4` |
+| Instructions, descriptions, or automated-check updates without changing the app | **No version change** | `3.1.3` stays `3.1.3` |
 | Active development or prerelease build | **DEV** | `0.2.1-dev` |
 | Application has no declared version | **Unversioned** | `Unversioned` |
 
