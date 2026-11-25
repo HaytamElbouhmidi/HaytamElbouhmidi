@@ -89,13 +89,14 @@ See how much battery charge is left by looking at the light bar on your laptop l
 ![Linux](https://img.shields.io/badge/LINUX-00843D?style=flat-square&logo=linux&logoColor=white)
 ![KDE Plasma](https://img.shields.io/badge/KDE%20PLASMA%20%2F%20DEsk-123447?style=flat-square)
 ![Testing](https://img.shields.io/badge/STATUS-TESTING-C88A00?style=flat-square)
-![Version](https://img.shields.io/badge/VERSION-0.3.0-123447?style=flat-square)
+![Version](https://img.shields.io/badge/VERSION-0.4.0-123447?style=flat-square)
 
 Make downloaded Linux apps easier to install. After the one-time setup, open a `.tar.gz`, `.tgz`, or `.AppImage` download with SmartTar, choose an available install option, and confirm. The app is then added to your normal application menu. AppImages are copied to a permanent app folder while the original download is left unchanged. Archives that are not ready-to-run apps can be unpacked into a new folder instead.
 
 **Made for:** CachyOS and Arch Linux with KDE Plasma or DEsk  
-**Before you start:** Installing SmartTar itself takes two terminal commands. After that, ordinary use with supported app downloads is point-and-click. For AppImages, right-click and choose Open With SmartTar if double-click starts the app directly. It does not run in the background.  
-**Current status:** Automated Linux checks passed. More testing on real CachyOS, KDE Plasma, and DEsk setups is needed. Not every compressed download contains an app that can be installed.
+**Before you start:** Run the one-time setup command and approve adding the SmartTar update source. After that, ordinary use with supported app downloads is point-and-click. For AppImages, right-click and choose Open With SmartTar if double-click starts the app directly. It does not run in the background.  
+**Updates:** Later SmartTar releases are included when you run your normal CachyOS or Arch system update. This updates SmartTar itself, not the apps you installed with it. Existing users run the new setup once to join this update channel.  
+**Current status:** Automated Linux checks cover archives, AppImages, signed package updates, and preservation of existing apps during migration. More testing on real CachyOS, KDE Plasma, and DEsk desktops is still needed. Not every compressed download contains an app that can be installed.
 
 [![Project files](https://img.shields.io/badge/DOWNLOAD-PROJECT%20FILES%20ZIP-00843D?style=flat-square&logo=github&logoColor=white)](https://github.com/HaytamElbouhmidi/smarttar/archive/refs/heads/main.zip)
 [![Getting started](https://img.shields.io/badge/GETTING%20STARTED-INSTALLATION-202522?style=flat-square)](https://github.com/HaytamElbouhmidi/smarttar#installation)
